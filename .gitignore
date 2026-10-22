@@ -1,0 +1,32 @@
+# Flutter and Dart
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Android build outputs
+android/.gradle/
+android/local.properties
+android/key.properties
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+# IDE settings
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Signing keys
+*.jks
+*.keystore

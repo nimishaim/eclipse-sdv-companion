@@ -1,17 +1,17 @@
-# mobile
+# Eclipse SDV Companion — Mobile App (Flutter)
 
-A new Flutter project.
+This directory contains the cross-platform Flutter application for the **Eclipse SDV VIRYA APM Autonomous Skateboard** companion app.
 
-## Getting Started
+For complete architectural details, network guides, and verification reports, see [root README.md](../README.md) and [AGENTS.md](../AGENTS.md).
 
-This project is a starting point for a Flutter application.
+## Quick Commands
+```bash
+# Analyze
+flutter analyze
 
-A few resources to get you started if this is your first Flutter project:
+# Test
+flutter test
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Build Android Debug APK
+flutter build apk --debug
+```
