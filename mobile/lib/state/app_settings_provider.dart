@@ -39,8 +39,8 @@ class AppSettingsNotifier extends Notifier<AppSettingsState> {
   @override
   AppSettingsState build() {
     return const AppSettingsState(
-      baseUrl: ApiConstants.defaultNgrokBaseUrl,
-      isDemoMode: true,
+      baseUrl: ApiConstants.defaultLocalBaseUrl,
+      isDemoMode: false,
     );
   }
 

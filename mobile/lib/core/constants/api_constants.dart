@@ -2,7 +2,7 @@ class ApiConstants {
   ApiConstants._();
 
   // Documented Central Node Endpoints
-  static const String defaultLocalBaseUrl = 'http://10.1.30.193:8000';
+  static const String defaultLocalBaseUrl = 'http://192.168.137.251:8000';
   static const String defaultNgrokBaseUrl =
       'https://spearfish-carving-slightly.ngrok-free.dev';
 

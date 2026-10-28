@@ -168,6 +168,26 @@ class ApiService {
     }
   }
 
+  /// GET /api/v1/ota/check (read-only update availability check)
+  Future<Map<String, dynamic>> checkOta({
+    String vehicleId = 'APM-DBW-01',
+    String? currentVersion,
+  }) async {
+    final response = await _dio.get(
+      '/api/v1/ota/check',
+      queryParameters: {
+        'vehicle_id': vehicleId,
+        if (currentVersion != null) 'current_version': currentVersion,
+      },
+    );
+
+    if (response.data is! Map) {
+      throw Exception('OTA check returned an unexpected response.');
+    }
+
+    return Map<String, dynamic>.from(response.data as Map);
+  }
+
   /// POST /api/v1/telemetry (documented ingestion API)
   Future<bool> postTelemetry(Telemetry telemetry) async {
     try {
